@@ -15,6 +15,9 @@ jobs:
     steps:
       - uses: sdkman/sdkman-action@main
         id: sdkman
+        with:
+          candidate: java
+          version: 23.1.2.r21-nik
 
       - run: java -version
 
