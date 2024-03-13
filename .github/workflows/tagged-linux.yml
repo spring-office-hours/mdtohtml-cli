@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: sdkman/sdkman-action@v1
+      - uses: sdkman/sdkman-action@main
         id: sdkman
 
       - run: java -version
@@ -32,7 +32,7 @@ jobs:
       - name: Build Image
         run: ./mvnw -Pnative native:compile
         
-      - uses: ncipollo/release-action@main
+      - uses: ncipollo/release-action@v1
         with:
           artifacts: "./target/mdtohtml-x86_64,LICENSE"
           allowUpdates: true
