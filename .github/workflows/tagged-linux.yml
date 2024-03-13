@@ -36,6 +36,6 @@ jobs:
         
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "./target/mdtohtml-x86_64,LICENSE"
+          artifacts: "./target/mdtohtml-linux-x86_64,LICENSE"
           allowUpdates: true
           token: ${{ secrets.GH_TOKEN }}

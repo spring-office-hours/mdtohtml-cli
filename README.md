@@ -26,6 +26,3 @@
  [stars-url]: https://github.com/spring-office-hours/mdtohtml-cli/stargazers
  [issues-shield]: https://img.shields.io/github/issues/spring-office-hours/mdtohtml-cli.svg?style=for-the-badge
  [issues-url]: https://github.com/spring-office-hours/mdtohtml-cli/issues
-
- spring-office-hours: dashaun
- [repository]: initializr-plusplus
