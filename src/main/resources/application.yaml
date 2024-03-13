@@ -1,0 +1,13 @@
+logging:
+  level:
+    root: 'off'
+
+spring:
+  main:
+    banner-mode: 'off'
+    web-application-type: 'NONE'
+  shell:
+    history:
+      enabled: 'false'
+    noninteractive:
+      primary-command: convert
