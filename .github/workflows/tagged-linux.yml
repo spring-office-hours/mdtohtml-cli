@@ -32,7 +32,7 @@ jobs:
       - name: Build Image
         run: ./mvnw -Pnative native:compile
         
-      - uses: ncipollo/release-action@v1
+      - uses: ncipollo/release-action@main
         with:
           artifacts: "./target/mdtohtml-x86_64,LICENSE"
           allowUpdates: true
