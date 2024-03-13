@@ -17,7 +17,7 @@ jobs:
         id: sdkman
         with:
           candidate: java
-          version: 23.1.2.r21-nik
+          version: 23.0.3.r17-nik
 
       - run: java -version
 
