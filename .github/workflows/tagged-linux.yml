@@ -13,20 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: sdkman/sdkman-action@main
-        id: sdkman
+      - uses: graalvm/setup-graalvm@v1
         with:
-          candidate: java
-          version: 23.0.3.r17-nik
-
-      - uses: actions/setup-java@v3
-        id: setup-java
-        with:
-          distribution: 'jdkfile'
-          java-version: 21
-          jdkFile: ${{ steps.sdkman.outputs.file }}
-
-      - run: java -version
+          version: 'latest'
+          java-version: '21'
+          components: 'native-image'
+          github-token: "${{ secrets.GH_TOKEN }}"
 
       - uses: actions/checkout@v3
         with:
